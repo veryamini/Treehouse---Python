@@ -13,7 +13,7 @@ def num_teachers(dictionary):
         number_of_teachers += 1
     return number_of_teachers
 
-# Returns totals umber of courses in the dictionary
+# Returns totals number of courses in the dictionary
 def num_courses(dictionary):
     number_of_courses = 0
     for value in dictionary.values():

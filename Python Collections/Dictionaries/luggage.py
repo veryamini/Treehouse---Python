@@ -9,9 +9,14 @@ def unpacker(first_name=None, last_name = None):
         print("Hi no name!")
 
         
-def unpack(**d):
-    return "Hi, I'm {name} and I love to eat {food}!".format(d["name"], d["food"])
+#def unpack(**d):
+ #   return "Hi, I'm {name} and I love to eat {food}!".format(d["name"], d["food"])
     
 packer(name = "Kenneth", num = 42, spanish_inquisition=None)
 unpacker({"last_name": "Love", "first_name": "Kenneth"})
-print(unpack({"name": "Yamini", "food": "Pasta"}))
+#print(unpack({"name": "Yamini", "food": "Pasta"}))
+
+course_minutes = {"Python Basics": 232, "Django Basics": 237, "Flask Basics": 189, "Java Basics": 133}
+
+for course, minutes in course_minutes.items():
+    print("{} is {} minutes long".format(course, minutes))
